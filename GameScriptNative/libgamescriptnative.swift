@@ -7,7 +7,7 @@ import func Foundation.free
 
 #if os(Linux)
 func _strdup(_ cstring: UnsafePointer<CChar>) -> UnsafeMutablePointer<CChar>? {
-  return strdup(cstring);
+  return strdup(cstring)
 }
 #endif
 
