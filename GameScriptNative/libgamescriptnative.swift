@@ -412,6 +412,44 @@ func _strdup(_ cstring: UnsafePointer<CChar>) -> UnsafeMutablePointer<CChar>? {
 @_silgen_name("_gsCProcedureAcos") func _gsCProcedureAcos(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
 @_silgen_name("_gsCProcedureAtan") func _gsCProcedureAtan(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
 @_silgen_name("_gsCProcedureAtan2") func _gsCProcedureAtan2(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureGlobalMeshesGetCount") func _gsCProcedureGlobalMeshesGetCount(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureGlobalMeshesPersistentGetCount") func _gsCProcedureGlobalMeshesPersistentGetCount(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureGlobalMeshesGetMeshLabelByMeshIndex") func _gsCProcedureGlobalMeshesGetMeshLabelByMeshIndex(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureGlobalMeshesPersistentGetMeshLabelByMeshIndex") func _gsCProcedureGlobalMeshesPersistentGetMeshLabelByMeshIndex(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureGlobalMeshesGetMeshHandleByMeshIndex") func _gsCProcedureGlobalMeshesGetMeshHandleByMeshIndex(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureGlobalMeshesPersistentGetMeshHandleByMeshIndex") func _gsCProcedureGlobalMeshesPersistentGetMeshHandleByMeshIndex(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureGlobalMeshesGetHaveVerticesChangedMeshIndexesCount") func _gsCProcedureGlobalMeshesGetHaveVerticesChangedMeshIndexesCount(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureGlobalMeshesGetHaveColorsChangedMeshIndexesCount") func _gsCProcedureGlobalMeshesGetHaveColorsChangedMeshIndexesCount(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureGlobalMeshesGetHaveTexCoordsChangedMeshIndexesCount") func _gsCProcedureGlobalMeshesGetHaveTexCoordsChangedMeshIndexesCount(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureGlobalMeshesGetHaveIndicesChangedMeshIndexesCount") func _gsCProcedureGlobalMeshesGetHaveIndicesChangedMeshIndexesCount(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureGlobalMeshesPersistentGetHaveVerticesChangedMeshIndexesCount") func _gsCProcedureGlobalMeshesPersistentGetHaveVerticesChangedMeshIndexesCount(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureGlobalMeshesPersistentGetHaveColorsChangedMeshIndexesCount") func _gsCProcedureGlobalMeshesPersistentGetHaveColorsChangedMeshIndexesCount(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureGlobalMeshesPersistentGetHaveTexCoordsChangedMeshIndexesCount") func _gsCProcedureGlobalMeshesPersistentGetHaveTexCoordsChangedMeshIndexesCount(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureGlobalMeshesPersistentGetHaveIndicesChangedMeshIndexesCount") func _gsCProcedureGlobalMeshesPersistentGetHaveIndicesChangedMeshIndexesCount(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureGlobalMeshesGetHaveVerticesChangedMeshIndexes") func _gsCProcedureGlobalMeshesGetHaveVerticesChangedMeshIndexes(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureGlobalMeshesGetHaveColorsChangedMeshIndexes") func _gsCProcedureGlobalMeshesGetHaveColorsChangedMeshIndexes(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureGlobalMeshesGetHaveTexCoordsChangedMeshIndexes") func _gsCProcedureGlobalMeshesGetHaveTexCoordsChangedMeshIndexes(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureGlobalMeshesGetHaveIndicesChangedMeshIndexes") func _gsCProcedureGlobalMeshesGetHaveIndicesChangedMeshIndexes(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureGlobalMeshesPersistentGetHaveVerticesChangedMeshIndexes") func _gsCProcedureGlobalMeshesPersistentGetHaveVerticesChangedMeshIndexes(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureGlobalMeshesPersistentGetHaveColorsChangedMeshIndexes") func _gsCProcedureGlobalMeshesPersistentGetHaveColorsChangedMeshIndexes(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureGlobalMeshesPersistentGetHaveTexCoordsChangedMeshIndexes") func _gsCProcedureGlobalMeshesPersistentGetHaveTexCoordsChangedMeshIndexes(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureGlobalMeshesPersistentGetHaveIndicesChangedMeshIndexes") func _gsCProcedureGlobalMeshesPersistentGetHaveIndicesChangedMeshIndexes(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureGlobalKeyPropertyGetKeyLabelsCount") func _gsCProcedureGlobalKeyPropertyGetKeyLabelsCount(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureGlobalKeyPropertyIsKeyLabelExists") func _gsCProcedureGlobalKeyPropertyIsKeyLabelExists(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureGlobalKeyPropertyGetKeyLabelByKeyIndex") func _gsCProcedureGlobalKeyPropertyGetKeyLabelByKeyIndex(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureGlobalKeyPropertyGetKeyPropertyLabelsCount") func _gsCProcedureGlobalKeyPropertyGetKeyPropertyLabelsCount(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureGlobalKeyPropertyIsKeyPropertyLabelExists") func _gsCProcedureGlobalKeyPropertyIsKeyPropertyLabelExists(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureGlobalKeyPropertyGetKeyPropertyLabelByPropertyIndex") func _gsCProcedureGlobalKeyPropertyGetKeyPropertyLabelByPropertyIndex(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureGlobalKeyPropertyRemoveKey") func _gsCProcedureGlobalKeyPropertyRemoveKey(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureGlobalKeyPropertyRemoveAllKeys") func _gsCProcedureGlobalKeyPropertyRemoveAllKeys(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureGlobalKeyPropertyRemoveProperty") func _gsCProcedureGlobalKeyPropertyRemoveProperty(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureGlobalKeyPropertyRemoveAllProperties") func _gsCProcedureGlobalKeyPropertyRemoveAllProperties(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureGlobalKeyPropertySetString") func _gsCProcedureGlobalKeyPropertySetString(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureGlobalKeyPropertySetNumber") func _gsCProcedureGlobalKeyPropertySetNumber(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureGlobalKeyPropertySetBool") func _gsCProcedureGlobalKeyPropertySetBool(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureGlobalKeyPropertyGetString") func _gsCProcedureGlobalKeyPropertyGetString(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureGlobalKeyPropertyGetNumber") func _gsCProcedureGlobalKeyPropertyGetNumber(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureGlobalKeyPropertyGetBool") func _gsCProcedureGlobalKeyPropertyGetBool(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
 @_silgen_name("_gsCProcedureErtAffineSpace3fGetSizeOfInBytes") func _gsCProcedureErtAffineSpace3fGetSizeOfInBytes(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
 @_silgen_name("_gsCProcedureErtAffineSpace3fSetDefaultInitialize") func _gsCProcedureErtAffineSpace3fSetDefaultInitialize(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
 @_silgen_name("_gsCProcedureErtAffineSpace3fSetInitialize") func _gsCProcedureErtAffineSpace3fSetInitialize(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
@@ -4054,6 +4092,362 @@ func programGetArgument(_ index: Number) -> String /* argument */ {
 
 func programClose() {
   _ = _gsCProcedureProgramClose(nil, nil, 0, nil)
+}
+
+func globalMeshesGetCount() -> Number /* count */ {
+  return _gsNumberFromVoidPointer(_gsCProcedureGlobalMeshesGetCount(nil, nil, 0, nil))
+}
+
+func globalMeshesPersistentGetCount() -> Number /* count */ {
+  return _gsNumberFromVoidPointer(_gsCProcedureGlobalMeshesPersistentGetCount(nil, nil, 0, nil))
+}
+
+func globalMeshesGetMeshLabelByMeshIndex(_ index: Number) -> String /* label */ {
+  let args = [
+    _gsVoidPointerFromNumber(index),
+  ]
+  let output = _gsCProcedureGlobalMeshesGetMeshLabelByMeshIndex(nil, nil, 0, args)!
+  let out = String(cString: output.assumingMemoryBound(to: CChar.self))
+  free(UnsafeMutableRawPointer(mutating: output))
+  return out
+}
+
+func globalMeshesPersistentGetMeshLabelByMeshIndex(_ index: Number) -> String /* label */ {
+  let args = [
+    _gsVoidPointerFromNumber(index),
+  ]
+  let output = _gsCProcedureGlobalMeshesPersistentGetMeshLabelByMeshIndex(nil, nil, 0, args)!
+  let out = String(cString: output.assumingMemoryBound(to: CChar.self))
+  free(UnsafeMutableRawPointer(mutating: output))
+  return out
+}
+
+func globalMeshesGetMeshHandleByMeshIndex(_ index: Number) -> Number /* handle */ {
+  let args = [
+    _gsVoidPointerFromNumber(index),
+  ]
+  return _gsNumberFromVoidPointer(_gsCProcedureGlobalMeshesGetMeshHandleByMeshIndex(nil, nil, 0, args))
+}
+
+func globalMeshesPersistentGetMeshHandleByMeshIndex(_ index: Number) -> Number /* handle */ {
+  let args = [
+    _gsVoidPointerFromNumber(index),
+  ]
+  return _gsNumberFromVoidPointer(_gsCProcedureGlobalMeshesPersistentGetMeshHandleByMeshIndex(nil, nil, 0, args))
+}
+
+func globalMeshesGetHaveVerticesChangedMeshIndexesCount() -> Number /* count */ {
+  return _gsNumberFromVoidPointer(_gsCProcedureGlobalMeshesGetHaveVerticesChangedMeshIndexesCount(nil, nil, 0, nil))
+}
+
+func globalMeshesGetHaveColorsChangedMeshIndexesCount() -> Number /* count */ {
+  return _gsNumberFromVoidPointer(_gsCProcedureGlobalMeshesGetHaveColorsChangedMeshIndexesCount(nil, nil, 0, nil))
+}
+
+func globalMeshesGetHaveTexCoordsChangedMeshIndexesCount() -> Number /* count */ {
+  return _gsNumberFromVoidPointer(_gsCProcedureGlobalMeshesGetHaveTexCoordsChangedMeshIndexesCount(nil, nil, 0, nil))
+}
+
+func globalMeshesGetHaveIndicesChangedMeshIndexesCount() -> Number /* count */ {
+  return _gsNumberFromVoidPointer(_gsCProcedureGlobalMeshesGetHaveIndicesChangedMeshIndexesCount(nil, nil, 0, nil))
+}
+
+func globalMeshesPersistentGetHaveVerticesChangedMeshIndexesCount() -> Number /* count */ {
+  return _gsNumberFromVoidPointer(_gsCProcedureGlobalMeshesPersistentGetHaveVerticesChangedMeshIndexesCount(nil, nil, 0, nil))
+}
+
+func globalMeshesPersistentGetHaveColorsChangedMeshIndexesCount() -> Number /* count */ {
+  return _gsNumberFromVoidPointer(_gsCProcedureGlobalMeshesPersistentGetHaveColorsChangedMeshIndexesCount(nil, nil, 0, nil))
+}
+
+func globalMeshesPersistentGetHaveTexCoordsChangedMeshIndexesCount() -> Number /* count */ {
+  return _gsNumberFromVoidPointer(_gsCProcedureGlobalMeshesPersistentGetHaveTexCoordsChangedMeshIndexesCount(nil, nil, 0, nil))
+}
+
+func globalMeshesPersistentGetHaveIndicesChangedMeshIndexesCount() -> Number /* count */ {
+  return _gsNumberFromVoidPointer(_gsCProcedureGlobalMeshesPersistentGetHaveIndicesChangedMeshIndexesCount(nil, nil, 0, nil))
+}
+
+func globalMeshesGetHaveVerticesChangedMeshIndexes(_ count: Number) -> NumberArray /* indexes [] */ {
+  let args = [
+    _gsVoidPointerFromNumber(count),
+  ]
+  let output = _gsCProcedureGlobalMeshesGetHaveVerticesChangedMeshIndexes(nil, nil, 0, args).assumingMemoryBound(to: Number.self)
+  var out = NumberArray()
+  if let output = Optional<UnsafePointer>(output) {
+    for i in stride(from: 0, to: Int(count), by: 1) {
+      out.append(output[i])
+    }
+  }
+  free(UnsafeMutableRawPointer(mutating: output))
+  return out
+}
+
+func globalMeshesGetHaveColorsChangedMeshIndexes(_ count: Number) -> NumberArray /* indexes [] */ {
+  let args = [
+    _gsVoidPointerFromNumber(count),
+  ]
+  let output = _gsCProcedureGlobalMeshesGetHaveColorsChangedMeshIndexes(nil, nil, 0, args).assumingMemoryBound(to: Number.self)
+  var out = NumberArray()
+  if let output = Optional<UnsafePointer>(output) {
+    for i in stride(from: 0, to: Int(count), by: 1) {
+      out.append(output[i])
+    }
+  }
+  free(UnsafeMutableRawPointer(mutating: output))
+  return out
+}
+
+func globalMeshesGetHaveTexCoordsChangedMeshIndexes(_ count: Number) -> NumberArray /* indexes [] */ {
+  let args = [
+    _gsVoidPointerFromNumber(count),
+  ]
+  let output = _gsCProcedureGlobalMeshesGetHaveTexCoordsChangedMeshIndexes(nil, nil, 0, args).assumingMemoryBound(to: Number.self)
+  var out = NumberArray()
+  if let output = Optional<UnsafePointer>(output) {
+    for i in stride(from: 0, to: Int(count), by: 1) {
+      out.append(output[i])
+    }
+  }
+  free(UnsafeMutableRawPointer(mutating: output))
+  return out
+}
+
+func globalMeshesGetHaveIndicesChangedMeshIndexes(_ count: Number) -> NumberArray /* indexes [] */ {
+  let args = [
+    _gsVoidPointerFromNumber(count),
+  ]
+  let output = _gsCProcedureGlobalMeshesGetHaveIndicesChangedMeshIndexes(nil, nil, 0, args).assumingMemoryBound(to: Number.self)
+  var out = NumberArray()
+  if let output = Optional<UnsafePointer>(output) {
+    for i in stride(from: 0, to: Int(count), by: 1) {
+      out.append(output[i])
+    }
+  }
+  free(UnsafeMutableRawPointer(mutating: output))
+  return out
+}
+
+func globalMeshesPersistentGetHaveVerticesChangedMeshIndexes(_ count: Number) -> NumberArray /* indexes [] */ {
+  let args = [
+    _gsVoidPointerFromNumber(count),
+  ]
+  let output = _gsCProcedureGlobalMeshesPersistentGetHaveVerticesChangedMeshIndexes(nil, nil, 0, args).assumingMemoryBound(to: Number.self)
+  var out = NumberArray()
+  if let output = Optional<UnsafePointer>(output) {
+    for i in stride(from: 0, to: Int(count), by: 1) {
+      out.append(output[i])
+    }
+  }
+  free(UnsafeMutableRawPointer(mutating: output))
+  return out
+}
+
+func globalMeshesPersistentGetHaveColorsChangedMeshIndexes(_ count: Number) -> NumberArray /* indexes [] */ {
+  let args = [
+    _gsVoidPointerFromNumber(count),
+  ]
+  let output = _gsCProcedureGlobalMeshesPersistentGetHaveColorsChangedMeshIndexes(nil, nil, 0, args).assumingMemoryBound(to: Number.self)
+  var out = NumberArray()
+  if let output = Optional<UnsafePointer>(output) {
+    for i in stride(from: 0, to: Int(count), by: 1) {
+      out.append(output[i])
+    }
+  }
+  free(UnsafeMutableRawPointer(mutating: output))
+  return out
+}
+
+func globalMeshesPersistentGetHaveTexCoordsChangedMeshIndexes(_ count: Number) -> NumberArray /* indexes [] */ {
+  let args = [
+    _gsVoidPointerFromNumber(count),
+  ]
+  let output = _gsCProcedureGlobalMeshesPersistentGetHaveTexCoordsChangedMeshIndexes(nil, nil, 0, args).assumingMemoryBound(to: Number.self)
+  var out = NumberArray()
+  if let output = Optional<UnsafePointer>(output) {
+    for i in stride(from: 0, to: Int(count), by: 1) {
+      out.append(output[i])
+    }
+  }
+  free(UnsafeMutableRawPointer(mutating: output))
+  return out
+}
+
+func globalMeshesPersistentGetHaveIndicesChangedMeshIndexes(_ count: Number) -> NumberArray /* indexes [] */ {
+  let args = [
+    _gsVoidPointerFromNumber(count),
+  ]
+  let output = _gsCProcedureGlobalMeshesPersistentGetHaveIndicesChangedMeshIndexes(nil, nil, 0, args).assumingMemoryBound(to: Number.self)
+  var out = NumberArray()
+  if let output = Optional<UnsafePointer>(output) {
+    for i in stride(from: 0, to: Int(count), by: 1) {
+      out.append(output[i])
+    }
+  }
+  free(UnsafeMutableRawPointer(mutating: output))
+  return out
+}
+
+func globalKeyPropertyGetKeyLabelsCount() -> Number /* count */ {
+  return _gsNumberFromVoidPointer(_gsCProcedureGlobalKeyPropertyGetKeyLabelsCount(nil, nil, 0, nil))
+}
+
+func globalKeyPropertyIsKeyLabelExists(_ key: String) -> Bool /* exists */ {
+  let _key = UnsafeRawPointer(_strdup(key)); defer { free(UnsafeMutableRawPointer(mutating: _key)) }
+
+  let args = [
+    _key,
+  ]
+  return _gsBoolFromVoidPointer(_gsCProcedureGlobalKeyPropertyIsKeyLabelExists(nil, nil, 0, args))
+}
+
+func globalKeyPropertyGetKeyLabelByKeyIndex(_ index: Number) -> String /* label */ {
+  let args = [
+    _gsVoidPointerFromNumber(index),
+  ]
+  let output = _gsCProcedureGlobalKeyPropertyGetKeyLabelByKeyIndex(nil, nil, 0, args)!
+  let out = String(cString: output.assumingMemoryBound(to: CChar.self))
+  free(UnsafeMutableRawPointer(mutating: output))
+  return out
+}
+
+func globalKeyPropertyGetKeyPropertyLabelsCount(_ key: String) -> Number /* count */ {
+  let _key = UnsafeRawPointer(_strdup(key)); defer { free(UnsafeMutableRawPointer(mutating: _key)) }
+
+  let args = [
+    _key,
+  ]
+  return _gsNumberFromVoidPointer(_gsCProcedureGlobalKeyPropertyGetKeyPropertyLabelsCount(nil, nil, 0, args))
+}
+
+func globalKeyPropertyIsKeyPropertyLabelExists(_ key: String, _ property: String) -> Bool /* exists */ {
+  let _key = UnsafeRawPointer(_strdup(key)); defer { free(UnsafeMutableRawPointer(mutating: _key)) }
+  let _property = UnsafeRawPointer(_strdup(property)); defer { free(UnsafeMutableRawPointer(mutating: _property)) }
+
+  let args = [
+    _key,
+    _property,
+  ]
+  return _gsBoolFromVoidPointer(_gsCProcedureGlobalKeyPropertyIsKeyPropertyLabelExists(nil, nil, 0, args))
+}
+
+func globalKeyPropertyGetKeyPropertyLabelByPropertyIndex(_ key: String, _ index: Number) -> String /* label */ {
+  let _key = UnsafeRawPointer(_strdup(key)); defer { free(UnsafeMutableRawPointer(mutating: _key)) }
+
+  let args = [
+    _key,
+    _gsVoidPointerFromNumber(index),
+  ]
+  let output = _gsCProcedureGlobalKeyPropertyGetKeyPropertyLabelByPropertyIndex(nil, nil, 0, args)!
+  let out = String(cString: output.assumingMemoryBound(to: CChar.self))
+  free(UnsafeMutableRawPointer(mutating: output))
+  return out
+}
+
+func globalKeyPropertyRemoveKey(_ key: String) {
+  let _key = UnsafeRawPointer(_strdup(key)); defer { free(UnsafeMutableRawPointer(mutating: _key)) }
+
+  let args = [
+    _key,
+  ]
+  _ = _gsCProcedureGlobalKeyPropertyRemoveKey(nil, nil, 0, args)
+}
+
+func globalKeyPropertyRemoveAllKeys() {
+  _ = _gsCProcedureGlobalKeyPropertyRemoveAllKeys(nil, nil, 0, nil)
+}
+
+func globalKeyPropertyRemoveProperty(_ key: String, _ property: String) {
+  let _key = UnsafeRawPointer(_strdup(key)); defer { free(UnsafeMutableRawPointer(mutating: _key)) }
+  let _property = UnsafeRawPointer(_strdup(property)); defer { free(UnsafeMutableRawPointer(mutating: _property)) }
+
+  let args = [
+    _key,
+    _property,
+  ]
+  _ = _gsCProcedureGlobalKeyPropertyRemoveProperty(nil, nil, 0, args)
+}
+
+func globalKeyPropertyRemoveAllProperties(_ key: String) {
+  let _key = UnsafeRawPointer(_strdup(key)); defer { free(UnsafeMutableRawPointer(mutating: _key)) }
+
+  let args = [
+    _key,
+  ]
+  _ = _gsCProcedureGlobalKeyPropertyRemoveAllProperties(nil, nil, 0, args)
+}
+
+func globalKeyPropertySetString(_ key: String, _ property: String, _ value: String) {
+  let _key = UnsafeRawPointer(_strdup(key)); defer { free(UnsafeMutableRawPointer(mutating: _key)) }
+  let _property = UnsafeRawPointer(_strdup(property)); defer { free(UnsafeMutableRawPointer(mutating: _property)) }
+  let _value = UnsafeRawPointer(_strdup(value)); defer { free(UnsafeMutableRawPointer(mutating: _value)) }
+
+  let args = [
+    _key,
+    _property,
+    _value,
+  ]
+  _ = _gsCProcedureGlobalKeyPropertySetString(nil, nil, 0, args)
+}
+
+func globalKeyPropertySetNumber(_ key: String, _ property: String, _ value: Number) {
+  let _key = UnsafeRawPointer(_strdup(key)); defer { free(UnsafeMutableRawPointer(mutating: _key)) }
+  let _property = UnsafeRawPointer(_strdup(property)); defer { free(UnsafeMutableRawPointer(mutating: _property)) }
+
+  let args = [
+    _key,
+    _property,
+    _gsVoidPointerFromNumber(value),
+  ]
+  _ = _gsCProcedureGlobalKeyPropertySetNumber(nil, nil, 0, args)
+}
+
+func globalKeyPropertySetBool(_ key: String, _ property: String, _ value: Bool) {
+  let _key = UnsafeRawPointer(_strdup(key)); defer { free(UnsafeMutableRawPointer(mutating: _key)) }
+  let _property = UnsafeRawPointer(_strdup(property)); defer { free(UnsafeMutableRawPointer(mutating: _property)) }
+
+  let args = [
+    _key,
+    _property,
+    _gsVoidPointerFromBool(value),
+  ]
+  _ = _gsCProcedureGlobalKeyPropertySetBool(nil, nil, 0, args)
+}
+
+func globalKeyPropertyGetString(_ key: String, _ property: String) -> String /* value */ {
+  let _key = UnsafeRawPointer(_strdup(key)); defer { free(UnsafeMutableRawPointer(mutating: _key)) }
+  let _property = UnsafeRawPointer(_strdup(property)); defer { free(UnsafeMutableRawPointer(mutating: _property)) }
+
+  let args = [
+    _key,
+    _property,
+  ]
+  let output = _gsCProcedureGlobalKeyPropertyGetString(nil, nil, 0, args)!
+  let out = String(cString: output.assumingMemoryBound(to: CChar.self))
+  free(UnsafeMutableRawPointer(mutating: output))
+  return out
+}
+
+func globalKeyPropertyGetNumber(_ key: String, _ property: String) -> Number /* value */ {
+  let _key = UnsafeRawPointer(_strdup(key)); defer { free(UnsafeMutableRawPointer(mutating: _key)) }
+  let _property = UnsafeRawPointer(_strdup(property)); defer { free(UnsafeMutableRawPointer(mutating: _property)) }
+
+  let args = [
+    _key,
+    _property,
+  ]
+  return _gsNumberFromVoidPointer(_gsCProcedureGlobalKeyPropertyGetNumber(nil, nil, 0, args))
+}
+
+func globalKeyPropertyGetBool(_ key: String, _ property: String) -> Bool /* value */ {
+  let _key = UnsafeRawPointer(_strdup(key)); defer { free(UnsafeMutableRawPointer(mutating: _key)) }
+  let _property = UnsafeRawPointer(_strdup(property)); defer { free(UnsafeMutableRawPointer(mutating: _property)) }
+
+  let args = [
+    _key,
+    _property,
+  ]
+  return _gsBoolFromVoidPointer(_gsCProcedureGlobalKeyPropertyGetBool(nil, nil, 0, args))
 }
 
 func getCurrentFrameThread2() -> Number /* frameOfThread2 */ {
