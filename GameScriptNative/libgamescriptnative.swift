@@ -676,6 +676,21 @@ func _strdup(_ cstring: UnsafePointer<CChar>) -> UnsafeMutablePointer<CChar>? {
 @_silgen_name("_gsCProcedureOnRerunCallRrtReleaseDevicePtr") func _gsCProcedureOnRerunCallRrtReleaseDevicePtr(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
 @_silgen_name("_gsCProcedureOnRerunCallRrtReleaseExternalCommandStream") func _gsCProcedureOnRerunCallRrtReleaseExternalCommandStream(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
 @_silgen_name("_gsCProcedureOnRerunCallRrtUnmapDevicePtr") func _gsCProcedureOnRerunCallRrtUnmapDevicePtr(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureXatlasStructSizeof") func _gsCProcedureXatlasStructSizeof(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureXatlasStructOffsetof") func _gsCProcedureXatlasStructOffsetof(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureXatlasMeshDeclInit") func _gsCProcedureXatlasMeshDeclInit(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureXatlasUvMeshDeclInit") func _gsCProcedureXatlasUvMeshDeclInit(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureXatlasChartOptionsInit") func _gsCProcedureXatlasChartOptionsInit(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureXatlasPackOptionsInit") func _gsCProcedureXatlasPackOptionsInit(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureXatlasCreate") func _gsCProcedureXatlasCreate(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureXatlasDestroy") func _gsCProcedureXatlasDestroy(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureXatlasAddMesh") func _gsCProcedureXatlasAddMesh(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureXatlasAddMeshJoin") func _gsCProcedureXatlasAddMeshJoin(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureXatlasAddUvMesh") func _gsCProcedureXatlasAddUvMesh(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureXatlasComputeCharts") func _gsCProcedureXatlasComputeCharts(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureXatlasPackCharts") func _gsCProcedureXatlasPackCharts(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureXatlasGenerate") func _gsCProcedureXatlasGenerate(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureOnRerunCallXatlasDestroy") func _gsCProcedureOnRerunCallXatlasDestroy(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
 
 // Bool
 typealias Number = Double
@@ -6945,3 +6960,117 @@ func onRerunCallRrtUnmapDevicePtr(_ rrcontext: Number, _ rrdevicePointer: Number
   _ = _gsCProcedureOnRerunCallRrtUnmapDevicePtr(nil, nil, 0, args)
 }
 
+func xatlasStructSizeof(_ structName: String) -> Number /* bytesCount */ {
+  let _structName = UnsafeRawPointer(_strdup(structName)); defer { free(UnsafeMutableRawPointer(mutating: _structName)) }
+
+  let args = [
+    _structName,
+  ]
+  return _gsNumberFromVoidPointer(_gsCProcedureXatlasStructSizeof(nil, nil, 0, args))
+}
+
+func xatlasStructOffsetof(_ structName: String, _ structMemberName: String) -> Number /* bytesFirst */ {
+  let _structName = UnsafeRawPointer(_strdup(structName)); defer { free(UnsafeMutableRawPointer(mutating: _structName)) }
+  let _structMemberName = UnsafeRawPointer(_strdup(structMemberName)); defer { free(UnsafeMutableRawPointer(mutating: _structMemberName)) }
+
+  let args = [
+    _structName,
+    _structMemberName,
+  ]
+  return _gsNumberFromVoidPointer(_gsCProcedureXatlasStructOffsetof(nil, nil, 0, args))
+}
+
+func xatlasMeshDeclInit(_ pointerToXatlasMeshDecl: Number) {
+  let args = [
+    _gsVoidPointerFromNumber(pointerToXatlasMeshDecl),
+  ]
+  _ = _gsCProcedureXatlasMeshDeclInit(nil, nil, 0, args)
+}
+
+func xatlasUvMeshDeclInit(_ pointerToXatlasUvMeshDecl: Number) {
+  let args = [
+    _gsVoidPointerFromNumber(pointerToXatlasUvMeshDecl),
+  ]
+  _ = _gsCProcedureXatlasUvMeshDeclInit(nil, nil, 0, args)
+}
+
+func xatlasChartOptionsInit(_ pointerToXatlasChartOptions: Number) {
+  let args = [
+    _gsVoidPointerFromNumber(pointerToXatlasChartOptions),
+  ]
+  _ = _gsCProcedureXatlasChartOptionsInit(nil, nil, 0, args)
+}
+
+func xatlasPackOptionsInit(_ pointerToXatlasPackOptions: Number) {
+  let args = [
+    _gsVoidPointerFromNumber(pointerToXatlasPackOptions),
+  ]
+  _ = _gsCProcedureXatlasPackOptionsInit(nil, nil, 0, args)
+}
+
+func xatlasCreate() -> Number /* xatlas */ {
+  return _gsNumberFromVoidPointer(_gsCProcedureXatlasCreate(nil, nil, 0, nil))
+}
+
+func xatlasDestroy(_ xatlas: Number) {
+  let args = [
+    _gsVoidPointerFromNumber(xatlas),
+  ]
+  _ = _gsCProcedureXatlasDestroy(nil, nil, 0, args)
+}
+
+func xatlasAddMesh(_ xatlas: Number, _ pointerToXatlasMeshDecl: Number, _ meshCountHint: Number) -> Number /* status */ {
+  let args = [
+    _gsVoidPointerFromNumber(xatlas),
+    _gsVoidPointerFromNumber(pointerToXatlasMeshDecl),
+    _gsVoidPointerFromNumber(meshCountHint),
+  ]
+  return _gsNumberFromVoidPointer(_gsCProcedureXatlasAddMesh(nil, nil, 0, args))
+}
+
+func xatlasAddMeshJoin(_ xatlas: Number) {
+  let args = [
+    _gsVoidPointerFromNumber(xatlas),
+  ]
+  _ = _gsCProcedureXatlasAddMeshJoin(nil, nil, 0, args)
+}
+
+func xatlasAddUvMesh(_ xatlas: Number, _ pointerToXatlasUvMeshDecl: Number) -> Number /* status */ {
+  let args = [
+    _gsVoidPointerFromNumber(xatlas),
+    _gsVoidPointerFromNumber(pointerToXatlasUvMeshDecl),
+  ]
+  return _gsNumberFromVoidPointer(_gsCProcedureXatlasAddUvMesh(nil, nil, 0, args))
+}
+
+func xatlasComputeCharts(_ xatlas: Number, _ pointerToXatlasChartOptions: Number) {
+  let args = [
+    _gsVoidPointerFromNumber(xatlas),
+    _gsVoidPointerFromNumber(pointerToXatlasChartOptions),
+  ]
+  _ = _gsCProcedureXatlasComputeCharts(nil, nil, 0, args)
+}
+
+func xatlasPackCharts(_ xatlas: Number, _ pointerToXatlasPackOptions: Number) {
+  let args = [
+    _gsVoidPointerFromNumber(xatlas),
+    _gsVoidPointerFromNumber(pointerToXatlasPackOptions),
+  ]
+  _ = _gsCProcedureXatlasPackCharts(nil, nil, 0, args)
+}
+
+func xatlasGenerate(_ xatlas: Number, _ pointerToXatlasChartOptions: Number, _ pointerToXatlasPackOptions: Number) {
+  let args = [
+    _gsVoidPointerFromNumber(xatlas),
+    _gsVoidPointerFromNumber(pointerToXatlasChartOptions),
+    _gsVoidPointerFromNumber(pointerToXatlasPackOptions),
+  ]
+  _ = _gsCProcedureXatlasGenerate(nil, nil, 0, args)
+}
+
+func onRerunCallXatlasDestroy(_ xatlas: Number) {
+  let args = [
+    _gsVoidPointerFromNumber(xatlas),
+  ]
+  _ = _gsCProcedureOnRerunCallXatlasDestroy(nil, nil, 0, args)
+}
