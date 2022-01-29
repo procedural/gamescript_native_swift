@@ -691,6 +691,35 @@ func _strdup(_ cstring: UnsafePointer<CChar>) -> UnsafeMutablePointer<CChar>? {
 @_silgen_name("_gsCProcedureXatlasPackCharts") func _gsCProcedureXatlasPackCharts(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
 @_silgen_name("_gsCProcedureXatlasGenerate") func _gsCProcedureXatlasGenerate(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
 @_silgen_name("_gsCProcedureOnRerunCallXatlasDestroy") func _gsCProcedureOnRerunCallXatlasDestroy(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureFbxNew") func _gsCProcedureFbxNew(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureFbxNewFromFile") func _gsCProcedureFbxNewFromFile(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureFbxDelete") func _gsCProcedureFbxDelete(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureFbxDeleteAll") func _gsCProcedureFbxDeleteAll(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureFbxCopyToFbx") func _gsCProcedureFbxCopyToFbx(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureFbxClear") func _gsCProcedureFbxClear(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureFbxEarlyUpdate") func _gsCProcedureFbxEarlyUpdate(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureFbxLateUpdate") func _gsCProcedureFbxLateUpdate(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureFbxGetMeshesCount") func _gsCProcedureFbxGetMeshesCount(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureFbxGetMesh") func _gsCProcedureFbxGetMesh(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureFbxGetMeshName") func _gsCProcedureFbxGetMeshName(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureFbxGetRootBonesCount") func _gsCProcedureFbxGetRootBonesCount(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureFbxGetRootBone") func _gsCProcedureFbxGetRootBone(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureFbxBoneGetName") func _gsCProcedureFbxBoneGetName(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureFbxBoneGetChildBonesCount") func _gsCProcedureFbxBoneGetChildBonesCount(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureFbxBoneGetChildBone") func _gsCProcedureFbxBoneGetChildBone(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureFbxBoneGetChildBoneByNameRecursively") func _gsCProcedureFbxBoneGetChildBoneByNameRecursively(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureFbxBoneGetVector") func _gsCProcedureFbxBoneGetVector(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureFbxBoneGetVersor") func _gsCProcedureFbxBoneGetVersor(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureFbxBoneGetScale") func _gsCProcedureFbxBoneGetScale(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureFbxBoneGetSideVector") func _gsCProcedureFbxBoneGetSideVector(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureFbxBoneGetUpVector") func _gsCProcedureFbxBoneGetUpVector(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureFbxBoneGetLookAtVector") func _gsCProcedureFbxBoneGetLookAtVector(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureFbxBoneGetTransformMatrix") func _gsCProcedureFbxBoneGetTransformMatrix(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureFbxBoneSetVector") func _gsCProcedureFbxBoneSetVector(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureFbxBoneSetVersor") func _gsCProcedureFbxBoneSetVersor(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureFbxBoneSetScale") func _gsCProcedureFbxBoneSetScale(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureFbxBoneRotate") func _gsCProcedureFbxBoneRotate(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureFbxBoneLookAt") func _gsCProcedureFbxBoneLookAt(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
 
 // Bool
 typealias Number = Double
@@ -7073,4 +7102,296 @@ func onRerunCallXatlasDestroy(_ xatlas: Number) {
     _gsVoidPointerFromNumber(xatlas),
   ]
   _ = _gsCProcedureOnRerunCallXatlasDestroy(nil, nil, 0, args)
+}
+
+func fbxNew(_ label: String) -> Number /* handle */ {
+  let _label = UnsafeRawPointer(_strdup(label)); defer { free(UnsafeMutableRawPointer(mutating: _label)) }
+
+  let args = [
+    _label,
+  ]
+  return _gsNumberFromVoidPointer(_gsCProcedureFbxNew(nil, nil, 0, args))
+}
+
+func fbxNewFromFile(_ label: String, _ filepath: String) -> Number /* handle */ {
+  let _label = UnsafeRawPointer(_strdup(label)); defer { free(UnsafeMutableRawPointer(mutating: _label)) }
+  let _filepath = UnsafeRawPointer(_strdup(filepath)); defer { free(UnsafeMutableRawPointer(mutating: _filepath)) }
+
+  let args = [
+    _label,
+    _filepath,
+  ]
+  return _gsNumberFromVoidPointer(_gsCProcedureFbxNewFromFile(nil, nil, 0, args))
+}
+
+func fbxDelete(_ label: String) {
+  let _label = UnsafeRawPointer(_strdup(label)); defer { free(UnsafeMutableRawPointer(mutating: _label)) }
+
+  let args = [
+    _label,
+  ]
+  _ = _gsCProcedureFbxDelete(nil, nil, 0, args)
+}
+
+func fbxDeleteAll() {
+  _ = _gsCProcedureFbxDeleteAll(nil, nil, 0, nil)
+}
+
+func fbxCopyToFbx(_ handleCopyFrom: Number, _ handleCopyTo: Number) {
+  let args = [
+    _gsVoidPointerFromNumber(handleCopyFrom),
+    _gsVoidPointerFromNumber(handleCopyTo),
+  ]
+  _ = _gsCProcedureFbxCopyToFbx(nil, nil, 0, args)
+}
+
+func fbxClear(_ handle: Number) {
+  let args = [
+    _gsVoidPointerFromNumber(handle),
+  ]
+  _ = _gsCProcedureFbxClear(nil, nil, 0, args)
+}
+
+func fbxEarlyUpdate(_ handle: Number) {
+  let args = [
+    _gsVoidPointerFromNumber(handle),
+  ]
+  _ = _gsCProcedureFbxEarlyUpdate(nil, nil, 0, args)
+}
+
+func fbxLateUpdate(_ handle: Number) {
+  let args = [
+    _gsVoidPointerFromNumber(handle),
+  ]
+  _ = _gsCProcedureFbxLateUpdate(nil, nil, 0, args)
+}
+
+func fbxGetMeshesCount(_ handle: Number) -> Number /* count */ {
+  let args = [
+    _gsVoidPointerFromNumber(handle),
+  ]
+  return _gsNumberFromVoidPointer(_gsCProcedureFbxGetMeshesCount(nil, nil, 0, args))
+}
+
+func fbxGetMesh(_ handle: Number, _ meshIndex: Number) -> Number /* meshHandle */ {
+  let args = [
+    _gsVoidPointerFromNumber(handle),
+    _gsVoidPointerFromNumber(meshIndex),
+  ]
+  return _gsNumberFromVoidPointer(_gsCProcedureFbxGetMesh(nil, nil, 0, args))
+}
+
+func fbxGetMeshName(_ handle: Number, _ meshIndex: Number) -> String /* meshName */ {
+  let args = [
+    _gsVoidPointerFromNumber(handle),
+    _gsVoidPointerFromNumber(meshIndex),
+  ]
+  let output = _gsCProcedureFbxGetMeshName(nil, nil, 0, args)!
+  let out = String(cString: output.assumingMemoryBound(to: CChar.self))
+  free(UnsafeMutableRawPointer(mutating: output))
+  return out
+}
+
+func fbxGetRootBonesCount(_ handle: Number) -> Number /* count */ {
+  let args = [
+    _gsVoidPointerFromNumber(handle),
+  ]
+  return _gsNumberFromVoidPointer(_gsCProcedureFbxGetRootBonesCount(nil, nil, 0, args))
+}
+
+func fbxGetRootBone(_ handle: Number, _ rootBoneIndex: Number) -> Number /* boneHandle */ {
+  let args = [
+    _gsVoidPointerFromNumber(handle),
+    _gsVoidPointerFromNumber(rootBoneIndex),
+  ]
+  return _gsNumberFromVoidPointer(_gsCProcedureFbxGetRootBone(nil, nil, 0, args))
+}
+
+func fbxBoneGetName(_ handle: Number) -> String /* boneName */ {
+  let args = [
+    _gsVoidPointerFromNumber(handle),
+  ]
+  let output = _gsCProcedureFbxBoneGetName(nil, nil, 0, args)!
+  let out = String(cString: output.assumingMemoryBound(to: CChar.self))
+  free(UnsafeMutableRawPointer(mutating: output))
+  return out
+}
+
+func fbxBoneGetChildBonesCount(_ handle: Number) -> Number /* count */ {
+  let args = [
+    _gsVoidPointerFromNumber(handle),
+  ]
+  return _gsNumberFromVoidPointer(_gsCProcedureFbxBoneGetChildBonesCount(nil, nil, 0, args))
+}
+
+func fbxBoneGetChildBone(_ handle: Number, _ childBoneIndex: Number) -> Number /* boneHandle */ {
+  let args = [
+    _gsVoidPointerFromNumber(handle),
+    _gsVoidPointerFromNumber(childBoneIndex),
+  ]
+  return _gsNumberFromVoidPointer(_gsCProcedureFbxBoneGetChildBone(nil, nil, 0, args))
+}
+
+func fbxBoneGetChildBoneByNameRecursively(_ handle: Number, _ boneName: String) -> Number /* boneHandle */ {
+  let _boneName = UnsafeRawPointer(_strdup(boneName)); defer { free(UnsafeMutableRawPointer(mutating: _boneName)) }
+
+  let args = [
+    _gsVoidPointerFromNumber(handle),
+    _boneName,
+  ]
+  return _gsNumberFromVoidPointer(_gsCProcedureFbxBoneGetChildBoneByNameRecursively(nil, nil, 0, args))
+}
+
+func fbxBoneGetVector(_ handle: Number) -> NumberArray /* position [3] {x, y, z} */ {
+  let args = [
+    _gsVoidPointerFromNumber(handle),
+  ]
+  let output = _gsCProcedureFbxBoneGetVector(nil, nil, 0, args).assumingMemoryBound(to: Number.self)
+  var out = NumberArray()
+  if let output = Optional<UnsafePointer>(output) {
+    out.append(output[0])
+    out.append(output[1])
+    out.append(output[2])
+  }
+  free(UnsafeMutableRawPointer(mutating: output))
+  return out
+}
+
+func fbxBoneGetVersor(_ handle: Number) -> NumberArray /* quaternion [4] {x, y, z, w} */ {
+  let args = [
+    _gsVoidPointerFromNumber(handle),
+  ]
+  let output = _gsCProcedureFbxBoneGetVersor(nil, nil, 0, args).assumingMemoryBound(to: Number.self)
+  var out = NumberArray()
+  if let output = Optional<UnsafePointer>(output) {
+    out.append(output[0])
+    out.append(output[1])
+    out.append(output[2])
+    out.append(output[3])
+  }
+  free(UnsafeMutableRawPointer(mutating: output))
+  return out
+}
+
+func fbxBoneGetScale(_ handle: Number) -> NumberArray /* scale [3] {x, y, z} */ {
+  let args = [
+    _gsVoidPointerFromNumber(handle),
+  ]
+  let output = _gsCProcedureFbxBoneGetScale(nil, nil, 0, args).assumingMemoryBound(to: Number.self)
+  var out = NumberArray()
+  if let output = Optional<UnsafePointer>(output) {
+    out.append(output[0])
+    out.append(output[1])
+    out.append(output[2])
+  }
+  free(UnsafeMutableRawPointer(mutating: output))
+  return out
+}
+
+func fbxBoneGetSideVector(_ handle: Number) -> NumberArray /* sideVector [3] {x, y, z} */ {
+  let args = [
+    _gsVoidPointerFromNumber(handle),
+  ]
+  let output = _gsCProcedureFbxBoneGetSideVector(nil, nil, 0, args).assumingMemoryBound(to: Number.self)
+  var out = NumberArray()
+  if let output = Optional<UnsafePointer>(output) {
+    out.append(output[0])
+    out.append(output[1])
+    out.append(output[2])
+  }
+  free(UnsafeMutableRawPointer(mutating: output))
+  return out
+}
+
+func fbxBoneGetUpVector(_ handle: Number) -> NumberArray /* upVector [3] {x, y, z} */ {
+  let args = [
+    _gsVoidPointerFromNumber(handle),
+  ]
+  let output = _gsCProcedureFbxBoneGetUpVector(nil, nil, 0, args).assumingMemoryBound(to: Number.self)
+  var out = NumberArray()
+  if let output = Optional<UnsafePointer>(output) {
+    out.append(output[0])
+    out.append(output[1])
+    out.append(output[2])
+  }
+  free(UnsafeMutableRawPointer(mutating: output))
+  return out
+}
+
+func fbxBoneGetLookAtVector(_ handle: Number) -> NumberArray /* lookAtVector [3] {x, y, z} */ {
+  let args = [
+    _gsVoidPointerFromNumber(handle),
+  ]
+  let output = _gsCProcedureFbxBoneGetLookAtVector(nil, nil, 0, args).assumingMemoryBound(to: Number.self)
+  var out = NumberArray()
+  if let output = Optional<UnsafePointer>(output) {
+    out.append(output[0])
+    out.append(output[1])
+    out.append(output[2])
+  }
+  free(UnsafeMutableRawPointer(mutating: output))
+  return out
+}
+
+func fbxBoneGetTransformMatrix(_ handle: Number, _ outPointer: Number) {
+  let args = [
+    _gsVoidPointerFromNumber(handle),
+    _gsVoidPointerFromNumber(outPointer),
+  ]
+  _ = _gsCProcedureFbxBoneGetTransformMatrix(nil, nil, 0, args)
+}
+
+func fbxBoneSetVector(_ handle: Number, _ x: Number, _ y: Number, _ z: Number) {
+  let args = [
+    _gsVoidPointerFromNumber(handle),
+    _gsVoidPointerFromNumber(x),
+    _gsVoidPointerFromNumber(y),
+    _gsVoidPointerFromNumber(z),
+  ]
+  _ = _gsCProcedureFbxBoneSetVector(nil, nil, 0, args)
+}
+
+func fbxBoneSetVersor(_ handle: Number, _ x: Number, _ y: Number, _ z: Number, _ w: Number) {
+  let args = [
+    _gsVoidPointerFromNumber(handle),
+    _gsVoidPointerFromNumber(x),
+    _gsVoidPointerFromNumber(y),
+    _gsVoidPointerFromNumber(z),
+    _gsVoidPointerFromNumber(w),
+  ]
+  _ = _gsCProcedureFbxBoneSetVersor(nil, nil, 0, args)
+}
+
+func fbxBoneSetScale(_ handle: Number, _ x: Number, _ y: Number, _ z: Number) {
+  let args = [
+    _gsVoidPointerFromNumber(handle),
+    _gsVoidPointerFromNumber(x),
+    _gsVoidPointerFromNumber(y),
+    _gsVoidPointerFromNumber(z),
+  ]
+  _ = _gsCProcedureFbxBoneSetScale(nil, nil, 0, args)
+}
+
+func fbxBoneRotate(_ handle: Number, _ rotationX: Number, _ rotationY: Number, _ rotationZ: Number, _ rotationDeg: Number) {
+  let args = [
+    _gsVoidPointerFromNumber(handle),
+    _gsVoidPointerFromNumber(rotationX),
+    _gsVoidPointerFromNumber(rotationY),
+    _gsVoidPointerFromNumber(rotationZ),
+    _gsVoidPointerFromNumber(rotationDeg),
+  ]
+  _ = _gsCProcedureFbxBoneRotate(nil, nil, 0, args)
+}
+
+func fbxBoneLookAt(_ handle: Number, _ x: Number, _ y: Number, _ z: Number, _ upX: Number, _ upY: Number, _ upZ: Number) {
+  let args = [
+    _gsVoidPointerFromNumber(handle),
+    _gsVoidPointerFromNumber(x),
+    _gsVoidPointerFromNumber(y),
+    _gsVoidPointerFromNumber(z),
+    _gsVoidPointerFromNumber(upX),
+    _gsVoidPointerFromNumber(upY),
+    _gsVoidPointerFromNumber(upZ),
+  ]
+  _ = _gsCProcedureFbxBoneLookAt(nil, nil, 0, args)
 }
