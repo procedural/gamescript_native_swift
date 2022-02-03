@@ -522,8 +522,14 @@ func _strdup(_ cstring: UnsafePointer<CChar>) -> UnsafeMutablePointer<CChar>? {
 @_silgen_name("_gsCProcedureErtSceneIntersectRayStructToHitStruct") func _gsCProcedureErtSceneIntersectRayStructToHitStruct(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
 @_silgen_name("_gsCProcedureOnRerunCallErtDecRef") func _gsCProcedureOnRerunCallErtDecRef(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
 @_silgen_name("_gsCProcedureOnRerunCallErtDestroyDevice") func _gsCProcedureOnRerunCallErtDestroyDevice(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureGetRedStructsCount") func _gsCProcedureGetRedStructsCount(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureGetRedStructName") func _gsCProcedureGetRedStructName(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureGetRedStructMembersCount") func _gsCProcedureGetRedStructMembersCount(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureGetRedStructMemberName") func _gsCProcedureGetRedStructMemberName(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
 @_silgen_name("_gsCProcedureRedStructSizeof") func _gsCProcedureRedStructSizeof(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
-@_silgen_name("_gsCProcedureRedStructOffsetof") func _gsCProcedureRedStructOffsetof(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureRedStructMemberSizeof") func _gsCProcedureRedStructMemberSizeof(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureRedStructMemberOffsetof") func _gsCProcedureRedStructMemberOffsetof(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureRedStructMemberTypeof") func _gsCProcedureRedStructMemberTypeof(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
 @_silgen_name("_gsCProcedureRedCreateContext") func _gsCProcedureRedCreateContext(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
 @_silgen_name("_gsCProcedureRedCreateContextWithRayTracingFeatureLevel1") func _gsCProcedureRedCreateContextWithRayTracingFeatureLevel1(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
 @_silgen_name("_gsCProcedureRedCreateContextWithRayTracingFeatureLevel2") func _gsCProcedureRedCreateContextWithRayTracingFeatureLevel2(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
@@ -624,8 +630,14 @@ func _strdup(_ cstring: UnsafePointer<CChar>) -> UnsafeMutablePointer<CChar>? {
 @_silgen_name("_gsCProcedureRedDestroyArrayTimestamp") func _gsCProcedureRedDestroyArrayTimestamp(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
 @_silgen_name("_gsCProcedureRedCallArrayTimestampWrite") func _gsCProcedureRedCallArrayTimestampWrite(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
 @_silgen_name("_gsCProcedureRedArrayTimestampRead") func _gsCProcedureRedArrayTimestampRead(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureGetRrtStructsCount") func _gsCProcedureGetRrtStructsCount(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureGetRrtStructName") func _gsCProcedureGetRrtStructName(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureGetRrtStructMembersCount") func _gsCProcedureGetRrtStructMembersCount(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureGetRrtStructMemberName") func _gsCProcedureGetRrtStructMemberName(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
 @_silgen_name("_gsCProcedureRrtStructSizeof") func _gsCProcedureRrtStructSizeof(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
-@_silgen_name("_gsCProcedureRrtStructOffsetof") func _gsCProcedureRrtStructOffsetof(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureRrtStructMemberSizeof") func _gsCProcedureRrtStructMemberSizeof(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureRrtStructMemberOffsetof") func _gsCProcedureRrtStructMemberOffsetof(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureRrtStructMemberTypeof") func _gsCProcedureRrtStructMemberTypeof(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
 @_silgen_name("_gsCProcedureRrtCreateContext") func _gsCProcedureRrtCreateContext(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
 @_silgen_name("_gsCProcedureRrtDestroyContext") func _gsCProcedureRrtDestroyContext(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
 @_silgen_name("_gsCProcedureRrtSetLogLevel") func _gsCProcedureRrtSetLogLevel(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
@@ -676,8 +688,14 @@ func _strdup(_ cstring: UnsafePointer<CChar>) -> UnsafeMutablePointer<CChar>? {
 @_silgen_name("_gsCProcedureOnRerunCallRrtReleaseDevicePtr") func _gsCProcedureOnRerunCallRrtReleaseDevicePtr(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
 @_silgen_name("_gsCProcedureOnRerunCallRrtReleaseExternalCommandStream") func _gsCProcedureOnRerunCallRrtReleaseExternalCommandStream(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
 @_silgen_name("_gsCProcedureOnRerunCallRrtUnmapDevicePtr") func _gsCProcedureOnRerunCallRrtUnmapDevicePtr(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureGetXatlasStructsCount") func _gsCProcedureGetXatlasStructsCount(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureGetXatlasStructName") func _gsCProcedureGetXatlasStructName(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureGetXatlasStructMembersCount") func _gsCProcedureGetXatlasStructMembersCount(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureGetXatlasStructMemberName") func _gsCProcedureGetXatlasStructMemberName(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
 @_silgen_name("_gsCProcedureXatlasStructSizeof") func _gsCProcedureXatlasStructSizeof(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
-@_silgen_name("_gsCProcedureXatlasStructOffsetof") func _gsCProcedureXatlasStructOffsetof(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureXatlasStructMemberSizeof") func _gsCProcedureXatlasStructMemberSizeof(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureXatlasStructMemberOffsetof") func _gsCProcedureXatlasStructMemberOffsetof(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureXatlasStructMemberTypeof") func _gsCProcedureXatlasStructMemberTypeof(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
 @_silgen_name("_gsCProcedureXatlasMeshDeclInit") func _gsCProcedureXatlasMeshDeclInit(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
 @_silgen_name("_gsCProcedureXatlasUvMeshDeclInit") func _gsCProcedureXatlasUvMeshDeclInit(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
 @_silgen_name("_gsCProcedureXatlasChartOptionsInit") func _gsCProcedureXatlasChartOptionsInit(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
@@ -695,6 +713,7 @@ func _strdup(_ cstring: UnsafePointer<CChar>) -> UnsafeMutablePointer<CChar>? {
 @_silgen_name("_gsCProcedureFbxNewFromFile") func _gsCProcedureFbxNewFromFile(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
 @_silgen_name("_gsCProcedureFbxDelete") func _gsCProcedureFbxDelete(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
 @_silgen_name("_gsCProcedureFbxDeleteAll") func _gsCProcedureFbxDeleteAll(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureFbxGetHandle") func _gsCProcedureFbxGetHandle(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
 @_silgen_name("_gsCProcedureFbxCopyToFbx") func _gsCProcedureFbxCopyToFbx(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
 @_silgen_name("_gsCProcedureFbxClear") func _gsCProcedureFbxClear(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
 @_silgen_name("_gsCProcedureFbxEarlyUpdate") func _gsCProcedureFbxEarlyUpdate(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
@@ -5302,6 +5321,34 @@ func onRerunCallErtDestroyDevice(_ deviceHandle: Number) {
   _ = _gsCProcedureOnRerunCallErtDestroyDevice(nil, nil, 0, args)
 }
 
+func getRedStructsCount() -> Number /* count */ {
+  return _gsNumberFromVoidPointer(_gsCProcedureGetRedStructsCount(nil, nil, 0, nil))
+}
+
+func getRedStructName(_ index: Number) -> String /* name */ {
+  let args = [
+    _gsVoidPointerFromNumber(index),
+  ]
+  let output = _gsCProcedureGetRedStructName(nil, nil, 0, args)!
+  let out = String(cString: output.assumingMemoryBound(to: CChar.self))
+  free(UnsafeMutableRawPointer(mutating: output))
+  return out
+}
+
+func getRedStructMembersCount() -> Number /* count */ {
+  return _gsNumberFromVoidPointer(_gsCProcedureGetRedStructMembersCount(nil, nil, 0, nil))
+}
+
+func getRedStructMemberName(_ index: Number) -> String /* name */ {
+  let args = [
+    _gsVoidPointerFromNumber(index),
+  ]
+  let output = _gsCProcedureGetRedStructMemberName(nil, nil, 0, args)!
+  let out = String(cString: output.assumingMemoryBound(to: CChar.self))
+  free(UnsafeMutableRawPointer(mutating: output))
+  return out
+}
+
 func redStructSizeof(_ structName: String) -> Number /* bytesCount */ {
   let _structName = UnsafeRawPointer(_strdup(structName)); defer { free(UnsafeMutableRawPointer(mutating: _structName)) }
 
@@ -5311,7 +5358,7 @@ func redStructSizeof(_ structName: String) -> Number /* bytesCount */ {
   return _gsNumberFromVoidPointer(_gsCProcedureRedStructSizeof(nil, nil, 0, args))
 }
 
-func redStructOffsetof(_ structName: String, _ structMemberName: String) -> Number /* bytesFirst */ {
+func redStructMemberSizeof(_ structName: String, _ structMemberName: String) -> Number /* bytesCount */ {
   let _structName = UnsafeRawPointer(_strdup(structName)); defer { free(UnsafeMutableRawPointer(mutating: _structName)) }
   let _structMemberName = UnsafeRawPointer(_strdup(structMemberName)); defer { free(UnsafeMutableRawPointer(mutating: _structMemberName)) }
 
@@ -5319,7 +5366,29 @@ func redStructOffsetof(_ structName: String, _ structMemberName: String) -> Numb
     _structName,
     _structMemberName,
   ]
-  return _gsNumberFromVoidPointer(_gsCProcedureRedStructOffsetof(nil, nil, 0, args))
+  return _gsNumberFromVoidPointer(_gsCProcedureRedStructMemberSizeof(nil, nil, 0, args))
+}
+
+func redStructMemberOffsetof(_ structName: String, _ structMemberName: String) -> Number /* bytesFirst */ {
+  let _structName = UnsafeRawPointer(_strdup(structName)); defer { free(UnsafeMutableRawPointer(mutating: _structName)) }
+  let _structMemberName = UnsafeRawPointer(_strdup(structMemberName)); defer { free(UnsafeMutableRawPointer(mutating: _structMemberName)) }
+
+  let args = [
+    _structName,
+    _structMemberName,
+  ]
+  return _gsNumberFromVoidPointer(_gsCProcedureRedStructMemberOffsetof(nil, nil, 0, args))
+}
+
+func redStructMemberTypeof(_ structName: String, _ structMemberName: String) -> Number /* structMemberType */ {
+  let _structName = UnsafeRawPointer(_strdup(structName)); defer { free(UnsafeMutableRawPointer(mutating: _structName)) }
+  let _structMemberName = UnsafeRawPointer(_strdup(structMemberName)); defer { free(UnsafeMutableRawPointer(mutating: _structMemberName)) }
+
+  let args = [
+    _structName,
+    _structMemberName,
+  ]
+  return _gsNumberFromVoidPointer(_gsCProcedureRedStructMemberTypeof(nil, nil, 0, args))
 }
 
 func redCreateContext(_ enableDebugMode: Bool) -> Number /* context */ {
@@ -6516,6 +6585,34 @@ func redArrayTimestampRead(_ context: Number, _ gpuHandle: Number, _ arrayTimest
   _ = _gsCProcedureRedArrayTimestampRead(nil, nil, 0, args)
 }
 
+func getRrtStructsCount() -> Number /* count */ {
+  return _gsNumberFromVoidPointer(_gsCProcedureGetRrtStructsCount(nil, nil, 0, nil))
+}
+
+func getRrtStructName(_ index: Number) -> String /* name */ {
+  let args = [
+    _gsVoidPointerFromNumber(index),
+  ]
+  let output = _gsCProcedureGetRrtStructName(nil, nil, 0, args)!
+  let out = String(cString: output.assumingMemoryBound(to: CChar.self))
+  free(UnsafeMutableRawPointer(mutating: output))
+  return out
+}
+
+func getRrtStructMembersCount() -> Number /* count */ {
+  return _gsNumberFromVoidPointer(_gsCProcedureGetRrtStructMembersCount(nil, nil, 0, nil))
+}
+
+func getRrtStructMemberName(_ index: Number) -> String /* name */ {
+  let args = [
+    _gsVoidPointerFromNumber(index),
+  ]
+  let output = _gsCProcedureGetRrtStructMemberName(nil, nil, 0, args)!
+  let out = String(cString: output.assumingMemoryBound(to: CChar.self))
+  free(UnsafeMutableRawPointer(mutating: output))
+  return out
+}
+
 func rrtStructSizeof(_ structName: String) -> Number /* bytesCount */ {
   let _structName = UnsafeRawPointer(_strdup(structName)); defer { free(UnsafeMutableRawPointer(mutating: _structName)) }
 
@@ -6525,7 +6622,7 @@ func rrtStructSizeof(_ structName: String) -> Number /* bytesCount */ {
   return _gsNumberFromVoidPointer(_gsCProcedureRrtStructSizeof(nil, nil, 0, args))
 }
 
-func rrtStructOffsetof(_ structName: String, _ structMemberName: String) -> Number /* bytesFirst */ {
+func rrtStructMemberSizeof(_ structName: String, _ structMemberName: String) -> Number /* bytesCount */ {
   let _structName = UnsafeRawPointer(_strdup(structName)); defer { free(UnsafeMutableRawPointer(mutating: _structName)) }
   let _structMemberName = UnsafeRawPointer(_strdup(structMemberName)); defer { free(UnsafeMutableRawPointer(mutating: _structMemberName)) }
 
@@ -6533,7 +6630,29 @@ func rrtStructOffsetof(_ structName: String, _ structMemberName: String) -> Numb
     _structName,
     _structMemberName,
   ]
-  return _gsNumberFromVoidPointer(_gsCProcedureRrtStructOffsetof(nil, nil, 0, args))
+  return _gsNumberFromVoidPointer(_gsCProcedureRrtStructMemberSizeof(nil, nil, 0, args))
+}
+
+func rrtStructMemberOffsetof(_ structName: String, _ structMemberName: String) -> Number /* bytesFirst */ {
+  let _structName = UnsafeRawPointer(_strdup(structName)); defer { free(UnsafeMutableRawPointer(mutating: _structName)) }
+  let _structMemberName = UnsafeRawPointer(_strdup(structMemberName)); defer { free(UnsafeMutableRawPointer(mutating: _structMemberName)) }
+
+  let args = [
+    _structName,
+    _structMemberName,
+  ]
+  return _gsNumberFromVoidPointer(_gsCProcedureRrtStructMemberOffsetof(nil, nil, 0, args))
+}
+
+func rrtStructMemberTypeof(_ structName: String, _ structMemberName: String) -> Number /* structMemberType */ {
+  let _structName = UnsafeRawPointer(_strdup(structName)); defer { free(UnsafeMutableRawPointer(mutating: _structName)) }
+  let _structMemberName = UnsafeRawPointer(_strdup(structMemberName)); defer { free(UnsafeMutableRawPointer(mutating: _structMemberName)) }
+
+  let args = [
+    _structName,
+    _structMemberName,
+  ]
+  return _gsNumberFromVoidPointer(_gsCProcedureRrtStructMemberTypeof(nil, nil, 0, args))
 }
 
 func rrtCreateContext(_ apiVersion: Number, _ api: Number, _ outContext: Number) -> Number /* rrerror */ {
@@ -6989,6 +7108,34 @@ func onRerunCallRrtUnmapDevicePtr(_ rrcontext: Number, _ rrdevicePointer: Number
   _ = _gsCProcedureOnRerunCallRrtUnmapDevicePtr(nil, nil, 0, args)
 }
 
+func getXatlasStructsCount() -> Number /* count */ {
+  return _gsNumberFromVoidPointer(_gsCProcedureGetXatlasStructsCount(nil, nil, 0, nil))
+}
+
+func getXatlasStructName(_ index: Number) -> String /* name */ {
+  let args = [
+    _gsVoidPointerFromNumber(index),
+  ]
+  let output = _gsCProcedureGetXatlasStructName(nil, nil, 0, args)!
+  let out = String(cString: output.assumingMemoryBound(to: CChar.self))
+  free(UnsafeMutableRawPointer(mutating: output))
+  return out
+}
+
+func getXatlasStructMembersCount() -> Number /* count */ {
+  return _gsNumberFromVoidPointer(_gsCProcedureGetXatlasStructMembersCount(nil, nil, 0, nil))
+}
+
+func getXatlasStructMemberName(_ index: Number) -> String /* name */ {
+  let args = [
+    _gsVoidPointerFromNumber(index),
+  ]
+  let output = _gsCProcedureGetXatlasStructMemberName(nil, nil, 0, args)!
+  let out = String(cString: output.assumingMemoryBound(to: CChar.self))
+  free(UnsafeMutableRawPointer(mutating: output))
+  return out
+}
+
 func xatlasStructSizeof(_ structName: String) -> Number /* bytesCount */ {
   let _structName = UnsafeRawPointer(_strdup(structName)); defer { free(UnsafeMutableRawPointer(mutating: _structName)) }
 
@@ -6998,7 +7145,7 @@ func xatlasStructSizeof(_ structName: String) -> Number /* bytesCount */ {
   return _gsNumberFromVoidPointer(_gsCProcedureXatlasStructSizeof(nil, nil, 0, args))
 }
 
-func xatlasStructOffsetof(_ structName: String, _ structMemberName: String) -> Number /* bytesFirst */ {
+func xatlasStructMemberSizeof(_ structName: String, _ structMemberName: String) -> Number /* bytesCount */ {
   let _structName = UnsafeRawPointer(_strdup(structName)); defer { free(UnsafeMutableRawPointer(mutating: _structName)) }
   let _structMemberName = UnsafeRawPointer(_strdup(structMemberName)); defer { free(UnsafeMutableRawPointer(mutating: _structMemberName)) }
 
@@ -7006,7 +7153,29 @@ func xatlasStructOffsetof(_ structName: String, _ structMemberName: String) -> N
     _structName,
     _structMemberName,
   ]
-  return _gsNumberFromVoidPointer(_gsCProcedureXatlasStructOffsetof(nil, nil, 0, args))
+  return _gsNumberFromVoidPointer(_gsCProcedureXatlasStructMemberSizeof(nil, nil, 0, args))
+}
+
+func xatlasStructMemberOffsetof(_ structName: String, _ structMemberName: String) -> Number /* bytesFirst */ {
+  let _structName = UnsafeRawPointer(_strdup(structName)); defer { free(UnsafeMutableRawPointer(mutating: _structName)) }
+  let _structMemberName = UnsafeRawPointer(_strdup(structMemberName)); defer { free(UnsafeMutableRawPointer(mutating: _structMemberName)) }
+
+  let args = [
+    _structName,
+    _structMemberName,
+  ]
+  return _gsNumberFromVoidPointer(_gsCProcedureXatlasStructMemberOffsetof(nil, nil, 0, args))
+}
+
+func xatlasStructMemberTypeof(_ structName: String, _ structMemberName: String) -> Number /* structMemberType */ {
+  let _structName = UnsafeRawPointer(_strdup(structName)); defer { free(UnsafeMutableRawPointer(mutating: _structName)) }
+  let _structMemberName = UnsafeRawPointer(_strdup(structMemberName)); defer { free(UnsafeMutableRawPointer(mutating: _structMemberName)) }
+
+  let args = [
+    _structName,
+    _structMemberName,
+  ]
+  return _gsNumberFromVoidPointer(_gsCProcedureXatlasStructMemberTypeof(nil, nil, 0, args))
 }
 
 func xatlasMeshDeclInit(_ pointerToXatlasMeshDecl: Number) {
@@ -7135,6 +7304,15 @@ func fbxDelete(_ label: String) {
 
 func fbxDeleteAll() {
   _ = _gsCProcedureFbxDeleteAll(nil, nil, 0, nil)
+}
+
+func fbxGetHandle(_ label: String) -> Number /* handle */ {
+  let _label = UnsafeRawPointer(_strdup(label)); defer { free(UnsafeMutableRawPointer(mutating: _label)) }
+
+  let args = [
+    _label,
+  ]
+  return _gsNumberFromVoidPointer(_gsCProcedureFbxGetHandle(nil, nil, 0, args))
 }
 
 func fbxCopyToFbx(_ handleCopyFrom: Number, _ handleCopyTo: Number) {
