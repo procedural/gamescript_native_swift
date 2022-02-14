@@ -387,6 +387,14 @@ func _strdup(_ cstring: UnsafePointer<CChar>) -> UnsafeMutablePointer<CChar>? {
 @_silgen_name("_gsCProcedureGlGetIntegerv") func _gsCProcedureGlGetIntegerv(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
 @_silgen_name("_gsCProcedureGetUniqueNumber") func _gsCProcedureGetUniqueNumber(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
 @_silgen_name("_gsCProcedureGetUint64Max") func _gsCProcedureGetUint64Max(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureGetLibGameHandle") func _gsCProcedureGetLibGameHandle(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureGetLibThread2Handle") func _gsCProcedureGetLibThread2Handle(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureGetGlfwWindowHandle") func _gsCProcedureGetGlfwWindowHandle(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureGetLastDragAndDropCounter") func _gsCProcedureGetLastDragAndDropCounter(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureGetLastDragAndDropFilepathsCount") func _gsCProcedureGetLastDragAndDropFilepathsCount(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureGetLastDragAndDropFilepath") func _gsCProcedureGetLastDragAndDropFilepath(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureGetLastDragAndDropPositionX") func _gsCProcedureGetLastDragAndDropPositionX(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureGetLastDragAndDropPositionY") func _gsCProcedureGetLastDragAndDropPositionY(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
 @_silgen_name("_gsCProcedureGithubR_lyehLz4xEncode") func _gsCProcedureGithubR_lyehLz4xEncode(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
 @_silgen_name("_gsCProcedureGithubR_lyehLz4xDecode") func _gsCProcedureGithubR_lyehLz4xDecode(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
 @_silgen_name("_gsCProcedureGithubR_lyehLz4xBoundsEncodeOutBytesCount") func _gsCProcedureGithubR_lyehLz4xBoundsEncodeOutBytesCount(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
@@ -3987,6 +3995,44 @@ func getUniqueNumber() -> Number /* uniqueNumber */ {
 
 func getUint64Max() -> Number /* uint64Max */ {
   return _gsNumberFromVoidPointer(_gsCProcedureGetUint64Max(nil, nil, 0, nil))
+}
+
+func getLibGameHandle() -> Number /* handle */ {
+  return _gsNumberFromVoidPointer(_gsCProcedureGetLibGameHandle(nil, nil, 0, nil))
+}
+
+func getLibThread2Handle() -> Number /* handle */ {
+  return _gsNumberFromVoidPointer(_gsCProcedureGetLibThread2Handle(nil, nil, 0, nil))
+}
+
+func getGlfwWindowHandle() -> Number /* handle */ {
+  return _gsNumberFromVoidPointer(_gsCProcedureGetGlfwWindowHandle(nil, nil, 0, nil))
+}
+
+func getLastDragAndDropCounter() -> Number /* counter */ {
+  return _gsNumberFromVoidPointer(_gsCProcedureGetLastDragAndDropCounter(nil, nil, 0, nil))
+}
+
+func getLastDragAndDropFilepathsCount() -> Number /* count */ {
+  return _gsNumberFromVoidPointer(_gsCProcedureGetLastDragAndDropFilepathsCount(nil, nil, 0, nil))
+}
+
+func getLastDragAndDropFilepath(_ index: Number) -> String /* filepath */ {
+  let args = [
+    _gsVoidPointerFromNumber(index),
+  ]
+  let output = _gsCProcedureGetLastDragAndDropFilepath(nil, nil, 0, args)!
+  let out = String(cString: output.assumingMemoryBound(to: CChar.self))
+  free(UnsafeMutableRawPointer(mutating: output))
+  return out
+}
+
+func getLastDragAndDropPositionX() -> Number /* x */ {
+  return _gsNumberFromVoidPointer(_gsCProcedureGetLastDragAndDropPositionX(nil, nil, 0, nil))
+}
+
+func getLastDragAndDropPositionY() -> Number /* y */ {
+  return _gsNumberFromVoidPointer(_gsCProcedureGetLastDragAndDropPositionY(nil, nil, 0, nil))
 }
 
 func githubR_lyehLz4xEncode(_ pointer: Number, _ pointerBytesFirst: Number, _ pointerBytesCount: Number, _ outPointer: Number, _ outPointerBytesFirst: Number, _ outPointerBytesCount: Number, _ flags: Number) -> Number /* value */ {
