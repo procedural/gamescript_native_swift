@@ -333,6 +333,8 @@ func _strdup(_ cstring: UnsafePointer<CChar>) -> UnsafeMutablePointer<CChar>? {
 @_silgen_name("_gsCProcedureImageUpdate") func _gsCProcedureImageUpdate(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
 @_silgen_name("_gsCProcedureImageBind") func _gsCProcedureImageBind(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
 @_silgen_name("_gsCProcedureImageUnbind") func _gsCProcedureImageUnbind(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureImageDraw") func _gsCProcedureImageDraw(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
+@_silgen_name("_gsCProcedureImageDrawSubsection") func _gsCProcedureImageDrawSubsection(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
 @_silgen_name("_gsCProcedureShaderBegin") func _gsCProcedureShaderBegin(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
 @_silgen_name("_gsCProcedureShaderEnd") func _gsCProcedureShaderEnd(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
 @_silgen_name("_gsCProcedureShaderSetUniform4f") func _gsCProcedureShaderSetUniform4f(_: UnsafeRawPointer!, _: UnsafeRawPointer!, _: Int32, _: UnsafeRawPointer!) -> UnsafeRawPointer!
@@ -3552,6 +3554,34 @@ func imageUnbind(_ handle: Number) {
     _gsVoidPointerFromNumber(handle),
   ]
   _ = _gsCProcedureImageUnbind(nil, nil, 0, args)
+}
+
+func imageDraw(_ handle: Number, _ x: Number, _ y: Number, _ z: Number, _ w: Number, _ h: Number) {
+  let args = [
+    _gsVoidPointerFromNumber(handle),
+    _gsVoidPointerFromNumber(x),
+    _gsVoidPointerFromNumber(y),
+    _gsVoidPointerFromNumber(z),
+    _gsVoidPointerFromNumber(w),
+    _gsVoidPointerFromNumber(h),
+  ]
+  _ = _gsCProcedureImageDraw(nil, nil, 0, args)
+}
+
+func imageDrawSubsection(_ handle: Number, _ x: Number, _ y: Number, _ z: Number, _ w: Number, _ h: Number, _ sx: Number, _ sy: Number, _ sw: Number, _ sh: Number) {
+  let args = [
+    _gsVoidPointerFromNumber(handle),
+    _gsVoidPointerFromNumber(x),
+    _gsVoidPointerFromNumber(y),
+    _gsVoidPointerFromNumber(z),
+    _gsVoidPointerFromNumber(w),
+    _gsVoidPointerFromNumber(h),
+    _gsVoidPointerFromNumber(sx),
+    _gsVoidPointerFromNumber(sy),
+    _gsVoidPointerFromNumber(sw),
+    _gsVoidPointerFromNumber(sh),
+  ]
+  _ = _gsCProcedureImageDrawSubsection(nil, nil, 0, args)
 }
 
 func shaderBegin(_ label: String, _ filepathShaderVert: String, _ filepathShaderFrag: String) -> Bool /* shadersAreValid */ {
