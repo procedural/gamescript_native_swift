@@ -76,7 +76,7 @@ array[Int(i)]
 
 ## LLDB tips:
 
-* Before running LLDB, you may want to change `-Ounchecked` to `-Onone` in `compile_game.sh` and `compile_thread2.sh` files.
+* Before running LLDB, you may want to change `-Ounchecked` to `-Onone` in `compile_game.sh` and `compile_thread2.sh` files. On Windows, change `-Ounchecked` to `-Onone -use-ld=lld -Xlinker -debug:dwarf` flags.
 * If you get LLDB errors on application start after entering the `r` command, just continue execution with `c` commands.
 * To debug a frame, enter `b frame` command first before entering the `r` command.
 * Use `fr v` command to show variables for the current stack frame.
