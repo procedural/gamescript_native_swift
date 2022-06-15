@@ -93,3 +93,7 @@ sudo ln -s /usr/lib/x86_64-linux-gnu/libutil.so  /usr/lib/swift/
 sudo ln -s /lib/x86_64-linux-gnu/libpthread.so.0 /usr/lib/swift/libpthread.so
 sudo ln -s /lib/x86_64-linux-gnu/libm.so.6       /usr/lib/swift/libm.so
 ```
+
+## Other links:
+
+* https://github.com/apple/swift/issues/58438
