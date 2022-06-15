@@ -73,3 +73,8 @@ with
 ```swift
 array[Int(i)]
 ```
+
+## LLDB tips:
+
+* If you get LLDB errors on application start after entering the `r` command, just continue execution with `c` commands.
+* To debug a frame, enter `b frame` command first before entering the `r` command.
