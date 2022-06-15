@@ -78,3 +78,8 @@ array[Int(i)]
 
 * If you get LLDB errors on application start after entering the `r` command, just continue execution with `c` commands.
 * To debug a frame, enter `b frame` command first before entering the `r` command.
+* You can also use LLDB version that is shipped with the `GameScriptNativeSwift.AppImage` like so:
+```
+./GameScriptNativeSwift.AppImage --appimage-extract
+LD_LIBRARY_PATH=./squashfs-root/usr/lib/ ./squashfs-root/usr/bin/lldb -- ./squashfs-root/usr/bin/game_script_native --set-directory-path /opt/GameScriptNative/
+```
