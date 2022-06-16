@@ -74,6 +74,18 @@ with
 array[Int(i)]
 ```
 
+## How to import C code
+
+* Create `MyHeader.h` file in Game Script Native Swift folder with your C code you want to import.
+* Create `module.modulemap` file in Game Script Native Swift folder with the following code:
+```
+module MyModule {
+  header "MyHeader.h"
+}
+```
+* Add⠀ `-I . ` ⠀flag to `compile_game.sh` and `compile_thread2.sh` files.
+* `import MyModule` in script.
+
 ## LLDB tips:
 
 * Before running LLDB, you may want to change `-Ounchecked` to `-Onone` in `compile_game.sh` and `compile_thread2.sh` files. On Windows, change `-Ounchecked` to `-Onone -use-ld=lld -Xlinker -debug:dwarf` flags.
