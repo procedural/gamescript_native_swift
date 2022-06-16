@@ -74,7 +74,7 @@ with
 array[Int(i)]
 ```
 
-## How to import C code
+## How to import C code:
 
 * Create `MyHeader.h` file in Game Script Native Swift folder with your C code you want to import.
 * Create `module.modulemap` file in Game Script Native Swift folder with the following code:
